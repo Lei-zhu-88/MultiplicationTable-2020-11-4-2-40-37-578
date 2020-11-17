@@ -14,18 +14,18 @@ describe('Multiplication Table', () => {
     expect(rendered).toBe('1*1=1')
   })
 
-  // it('should remind that the range is not valid', () => {
-  //   // given
-  //   const table = new MultiplicationTable()
-  //   const start = 0
-  //   const end = 10
+  it('should remind that the range is not valid', () => {
+    // given
+    const table = new MultiplicationTable()
+    const start = 0
+    const end = 10
 
-  //   //when
-  //   const rendered = table.render(start, end)
+    //when
+    const rendered = table.render(start, end)
 
-  //   //then
-  //   expect(rendered).toBe('out of range!')
-  // })
+    //then
+    expect(rendered).toBe('out of range!')
+  })
 
   it('should return an empty string', () => {
     // given
