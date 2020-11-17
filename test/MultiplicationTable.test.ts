@@ -40,17 +40,37 @@ describe('Multiplication Table', () => {
     expect(rendered).toBe('')
   })
 
-  // it('should render multiplication table of (9, 10)', () => {
+
+  it('should render multiplication table of (2, 4)', () => {
+    // given
+    const table = new MultiplicationTable()
+    const start = 2
+    const end = 4
+
+    //when
+    const rendered = table.render(start, end)
+
+    //then
+    expect(rendered).toBe('2*2=4\n2*3=6  3*3=9\n2*4=8  3*4=12  4*4=16')
+  })
+
+
+
+
+
+
+
+  // it('should render multiplication table of (2, 5)', () => {
   //   // given
   //   const table = new MultiplicationTable()
-  //   const start = 9
-  //   const end = 10
+  //   const start = 2
+  //   const end = 5
 
   //   //when
   //   const rendered = table.render(start, end)
 
   //   //then
-  //   expect(rendered).toBe('9*9=81')
+  //   expect(rendered).toBe('2*2=4\n2*3=6   3*3=9\n2*4=8   3*4=12  4*4=16\n2*5=10  3*5=15  4*5=20  5*5=25')
   // })
   
 
